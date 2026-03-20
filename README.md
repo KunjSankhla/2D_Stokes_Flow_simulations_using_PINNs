@@ -16,13 +16,18 @@
 Both models enforce 2D Stokes momentum equations and continuity via automatic differentiation through the network. BCs imposed as soft constraints weighted 2x in the loss.
 
 ## To Run
-...
+
+\```bash
 pip install torch numpy matplotlib
 jupyter notebook
-...
+\```
 
-...
 ## Repository Structure
-basics/               # introductory PINN exercise
-stokes_flow/          # main simulations
-...
+
+\```
+basics/
+    1d_heat_equation.ipynb
+stokes_flow/
+    channel_flow_poiseuille.ipynb
+    lid_driven_cavity.ipynb
+\```
