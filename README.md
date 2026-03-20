@@ -15,7 +15,7 @@
 ## Physics
 Both models enforce 2D Stokes momentum equations and continuity via automatic differentiation through the network. BCs imposed as soft constraints weighted 2x in the loss.
 
-## To Running
+## To Run
 The following libraries are required. The jupyter notebook env is recommended for viewing.
 
 ```bash
