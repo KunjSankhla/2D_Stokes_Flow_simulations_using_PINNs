@@ -9,7 +9,9 @@
 ### Updated 24/03/20256
 - Capability to handle any rectangular domain
 - Implemented Latin Hypercube Sampling and sequential resampling in the training loop
+
 Implemented in :-
+
 ```
 basics/
     Rectangular_channel_flow.ipynb
