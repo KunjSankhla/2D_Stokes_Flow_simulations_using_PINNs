@@ -1,10 +1,20 @@
 # Physics-Informed Neural Networks for solving 2D Stokes flow problems in PyTorch. Two cases implemented.
 
-## Case 1: Channel Flow (Poiseuille)
+## Case 1: Square Channel Flow (Poiseuille)
 
 - Inlet U=1 on left wall, pressure exit on right wall, no-slip top/bottom
 - Validated against analytical Poiseuille centerline velocity (U_c = 1.5): 95.45% accuracy at the exit plane
 - Architecture: 2 → 64 → 128 → 64 → 3, Tanh, Adam + ReduceLROnPlateau
+
+### Updated 24/03/20256
+- Capability to handle any rectangular domain
+- Implemented Latin Hypercube Sampling and sequential resampling in the training loop
+Implemented in :-
+```
+basics/
+    Rectangular_channel_flow.ipynb
+```
+
 
 ## Case 2: Lid-Driven Cavity
 
@@ -29,6 +39,7 @@ jupyter notebook
 basics/
     1d_heat_equation.ipynb
 stokes_flow/
-    channel_flow_poiseuille.ipynb
+    Square_channel_flow_poiseuille.ipynb
+    Rectangular_channel_flow.ipynb
     lid_driven_cavity.ipynb
 ```
